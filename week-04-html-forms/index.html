@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form for visitors and customers</h1>
+    <p>This form is for all customers and visitors who wants to order a menu or get information</p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>
+                Your Details:
+            </legend>
+            <label>First Name:
+            <input type="text" name="name" minlength="2" maxlength="30" required>
+            </label>
+            <br />
+            <br />
+            <label>Last Name:
+            <input type="text" name="last name" minlength="2" maxlength="30" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Your review
+            </legend>
+            <p>
+                <label for="which-food">
+                    Which food would you like to eat?
+                </label>
+                <select name="referrer" id="which-food">
+                    <option value="chicken">Chicken</option>
+                    <option value="beef">Beef</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </p>
+            <p>
+                <label for="comments">Do you have any alergies?</label>
+                <br>
+                <textarea id="comments" rows="4" cols="40"></textarea>
+            </p>
+            <input type="submit" value="send">
+            <p>
+                <a href="#top">Back to top</a>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
